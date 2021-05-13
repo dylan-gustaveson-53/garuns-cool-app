@@ -39,4 +39,8 @@ jobs:
         yarn test
       env:
         CI: true
+    - uses: actions/upload-artifact@v2
+      with:
+        name: spa-build
+        path: build
       
